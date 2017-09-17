@@ -2,11 +2,14 @@ words = ["Totam", "ut", "odit", "quis", "Maiores", "unde", "EX", "EST", "corpori
 
 
 words.select do |word|
-  if word.downcase! == nil puts 'lowercase'
+  if word == word.downcase
+     puts 'lowercase'
 
- elsif word.length == 4  puts "long"
+ elsif word.length == 4
+   puts "long"
 
- elsif word.length > 4 && word.downcase! == nil  puts "long and lowercase"
+ elsif word.length > 4 && word == word.downcase
+    puts "long and lowercase"
 
 else
    puts word
